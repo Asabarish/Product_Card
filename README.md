@@ -63,7 +63,7 @@ Test your webpage in a browser.
 ## PROGRAM:
 ```
 store.html
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>Product Card</title>
