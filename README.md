@@ -1,5 +1,5 @@
 # Product Card Design with Hover Effect using CSS
-## Date:
+## Date:9.3.2026
 
 ## AIM:
 To design a Product Card for an E-commerce website using HTML and CSS and apply hover effects, transitions, and styling techniques to create an interactive user interface.
@@ -61,8 +61,108 @@ Style the footer using background color and center alignment.
 Test your webpage in a browser.
 
 ## PROGRAM:
+```
+store.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="card">
+
+    <img src="image.png" class="product-img">
+
+    <h2>Wireless Headphones</h2>
+
+    <p class="desc">
+        High quality wireless headphones with noise cancellation.
+    </p>
+
+    <h3 class="price">1999/-Rs</h3>
+
+    <button>Add to Cart</button>
+
+</div>
+
+<footer>
+    <p>Learner Name: Sabarish A</p>
+    <p>Register Number:25004630</p>
+</footer>
+
+</body>
+</html>
+
+
+
+style.css
+
+body{
+    font-family: Arial;
+    background-color:#f5f5f5;
+    text-align:center;
+}
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    margin:100px auto;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.product-img{
+    width:100%;
+    transition:0.3s;
+}
+
+.desc{
+    font-size:14px;
+    color:gray;
+}
+
+.price{
+    color:green;
+}
+
+button{
+    padding:10px 20px;
+    background-color:blue;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover .product-img{
+    transform:scale(1.1);
+}
+
+.card:hover button{
+    background-color:red;
+}
+footer{
+    background-color:#333;
+    color:white;
+    padding:15px;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+
+
+```
 ## OUTPUT:
-
+![alt text](image.png)
 ## RESULT:
 The Product Card with Hover Effect was successfully designed using HTML and CSS.
